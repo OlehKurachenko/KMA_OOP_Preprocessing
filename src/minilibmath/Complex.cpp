@@ -30,7 +30,7 @@ Complex& Complex::operator*=(const Complex &that) {
 	return *this;
 }
 
-Complex::Complex& operator/=(const Complex &that) {
+Complex& Complex::operator/=(const Complex &that) {
 	long double that_absolute_val_squared(that._re * that._re + that._im * that._im);
 	long double temp_im((this->_im * that._re - this->_re * that._im) / that_absolute_val_squared);
 	this->_re = (this->_re * that._re + this->_im * that._im) / that_absolute_val_squared;
