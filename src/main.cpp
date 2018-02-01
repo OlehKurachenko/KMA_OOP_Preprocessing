@@ -8,9 +8,9 @@
 //  
 //  checkout my GitHub https://github.com/OlehKurachenko
 //  rate, CV & contacts http://www.linkedin.com/in/oleh-kurachenko-6b025b111
-//  
-#include "minilibmath/Complex.h"
+//
 #include "minilibmath/minilibmath.h"
+#include "minilibmath/Complex.h"
 
 /**
  * This main function is written for presentation purposes, that is why
