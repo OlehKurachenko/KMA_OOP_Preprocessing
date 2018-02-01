@@ -19,7 +19,7 @@ const unsigned minilib::sqrt_accuracy(25);
  * @return sqrt(n) - square root of n.
  */
 long double minilib::sqrt(const long double n) {
-	if (n < 0)
+	if (n < 0 || n == -1.0 / 0.0 || n == 1.0 / 0.0 || n != n)
 		return (0.0 / 0.0);
 
 	unsigned cnt(sqrt_accuracy);
