@@ -16,6 +16,20 @@ namespace minilib {
 	extern const unsigned sqrt_accuracy;
 
 	long double sqrt(const long double n);
+
+	template <typename T>
+	T power(const T val, const unsigned pow) {
+		T temp_val(val);
+		T res(1);
+		unsigned temp_pow(pow);
+		while (temp_pow) {
+			if (temp_pow & 1)
+				res *= temp_val;
+			temp_val *= temp_val;
+			temp_pow >>= 1;
+		}
+		return (res);
+	}
 }
 
 #endif //KMA_OOP_PREPROCESSING_MINILIBMATH_H
