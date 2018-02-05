@@ -22,7 +22,7 @@ So, for file "main.cpp" it'll look like:
 "main_preprocessed" in not a file, rather a data passed from preprocessor
 to compiler as they are parts of the same programm. But, there is a way to
 see this data using **gcc** command flag **-E** (We are talking about command
-line interface, that can be reached using UNIX Shell (Linux & MacOS Terminal))
+line interface, that can be reached using UNIX Shell (Linux & MacOS Terminal)
 or Windows Command Line).
 
 In fact, in most C/C++ compiler implementation, preprocessor is a separate program
