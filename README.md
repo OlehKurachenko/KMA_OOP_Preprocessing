@@ -21,7 +21,9 @@ So, for file "main.cpp" it'll look like:
 
 "main_preprocessed" in not a file, rather a data passed from preprocessor
 to compiler as they are parts of the same programm. But, there is a way to
-see this data using **gcc** command flag **-E**.
+see this data using **gcc** command flag **-E** (We are talking about command
+line interface, that can be reached using UNIX Shell (Linux & MacOS Terminal))
+or Windows Command Line).
 
 In fact, in most C/C++ compiler implementation, preprocessor is a separate program
 invoked by compiler, called **cpp**.
@@ -43,14 +45,14 @@ the real process is this:
 >
 >main.o
 
-There are special flags for **gcc** to stop on any of this stage (examples works
-on our test project):
+There are special flags for **g++** (gcc command to compile C++ source code) to stop
+on any of this stage (examples works on our test project):
 
->g++ -E src/main.c -o src/main.ii
+>g++ -E src/main.cpp -o src/main.ii
 >
->g++ -S src/main.ii -o src/main.s
+>g++ -S src/main.cpp -o src/main.s
 >
->g++ -c src/main.s -o src/main.o
+>g++ -c src/main.cpp -o src/main.o
 
 _(argument after flag **-o** specifies name(and directory) for file, in which
 the result of execution will be stored)_
